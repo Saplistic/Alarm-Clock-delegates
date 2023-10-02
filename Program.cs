@@ -36,11 +36,11 @@ public class Program
                 "\n5: schakel boodschap aan/uit" +
                 "\n6: schakel knipperlicht aan/uit (warning flashing lights)");
 
-            //Lees de invoer en stel de keuze gelijk aan een niet bestaande optie als de invoer geen nummer is
             Console.ForegroundColor = ConsoleColor.White;
+            //Controleer ofdat de gebruikersinvoer geen int is & update variabele 'optie'
             if (!int.TryParse(Console.ReadLine(), out optie))
             {
-                optie = -1;
+                optie = -1; //stel dan de optie aan een niet bestaande optie 
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
